@@ -73,13 +73,19 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-        <GridView
-            android:id="@+id/GridView"
+        <FrameLayout
+            android:id="@+id/homeFragLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:numColumns="2">
+            android:layout_height="match_parent">
+            <fragment
+                android:tag="homeFrag"
+                class="kr.co.tjeit.usedthingdeal.fragment.HomeFrag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-        </GridView>
+        </FrameLayout>
+
+
 
     </LinearLayout>
 
