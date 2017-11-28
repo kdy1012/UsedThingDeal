@@ -80,6 +80,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:background="@color/white"
             android:id="@+id/home_frag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,6 +103,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:background="@color/white"
             android:id="@+id/category_frag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -124,6 +126,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:background="@color/white"
             android:id="@+id/community_frag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -146,6 +149,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:background="@color/white"
             android:id="@+id/moreSee_frag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

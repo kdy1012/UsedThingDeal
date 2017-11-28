@@ -24,8 +24,7 @@ import kr.co.tjeit.usedthingdeal.fragment.MoreSeeFrag;
 public class MainActivity extends BaseActivity {
 
 
-    List<Product> GridListData = new ArrayList<>();
-    HomeFragAdapter mAdapter;
+
 
     private android.widget.ImageView hambugermenuimg;
     private android.widget.ImageView noticeImg;
@@ -52,8 +51,7 @@ public class MainActivity extends BaseActivity {
     public void setValuse() {
         mainViewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
 
-        mAdapter = new HomeFragAdapter(mContext, GridListData);
-        GridView.setAdapter(mAdapter);
+
 
     }
 
@@ -86,11 +84,23 @@ public class MainActivity extends BaseActivity {
                 // 페이지에 맞는 제목을 설정
                 if (position == 0) {
                     homefrag.setBackgroundColor(Color.GRAY);
+                    categoryfrag.setBackgroundColor(Color.WHITE);
+                    communityfrag.setBackgroundColor(Color.WHITE);
+                    moreSeefrag.setBackgroundColor(Color.WHITE);
                 } else if (position == 1) {
+                    homefrag.setBackgroundColor(Color.WHITE);
                     categoryfrag.setBackgroundColor(Color.GRAY);
+                    communityfrag.setBackgroundColor(Color.WHITE);
+                    moreSeefrag.setBackgroundColor(Color.WHITE);
                 } else if (position == 2) {
+                    homefrag.setBackgroundColor(Color.WHITE);
+                    categoryfrag.setBackgroundColor(Color.WHITE);
                     communityfrag.setBackgroundColor(Color.GRAY);
+                    moreSeefrag.setBackgroundColor(Color.WHITE);
                 } else if (position == 3) {
+                    homefrag.setBackgroundColor(Color.WHITE);
+                    categoryfrag.setBackgroundColor(Color.WHITE);
+                    communityfrag.setBackgroundColor(Color.WHITE);
                     moreSeefrag.setBackgroundColor(Color.GRAY);
                 }
 
