@@ -17,13 +17,13 @@ import kr.co.tjeit.usedthingdeal.data.Product;
  * Created by the on 2017-11-27.
  */
 
-public class MainGridViewAdapter extends ArrayAdapter<Product> {
+public class HomeFragAdapter extends ArrayAdapter<Product> {
 
     Context mContext;
     List<Product> mList;
     LayoutInflater inf;
 
-    public MainGridViewAdapter(Context context, List<Product> list) {
+    public HomeFragAdapter(Context context, List<Product> list) {
         super(context, R.layout.main_girdview_list_item, list);
 
         mContext = context;

@@ -68,26 +68,11 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <FrameLayout
-            android:id="@+id/homeFragLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <fragment
-                android:tag="homeFrag"
-                class="kr.co.tjeit.usedthingdeal.fragment.HomeFrag"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-        </FrameLayout>
-
-
-
-    </LinearLayout>
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -99,7 +84,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:tag="0">
 
             <ImageView
                 android:layout_width="30dp"
@@ -116,11 +102,12 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/categori_frag"
+            android:id="@+id/category_frag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:tag="1">
 
             <ImageView
                 android:layout_width="30dp"
@@ -141,7 +128,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:tag="2">
 
             <ImageView
                 android:layout_width="30dp"
@@ -162,7 +150,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:tag="3">
 
             <ImageView
                 android:layout_width="30dp"
