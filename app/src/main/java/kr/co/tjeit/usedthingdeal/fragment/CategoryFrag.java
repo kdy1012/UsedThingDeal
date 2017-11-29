@@ -47,6 +47,16 @@ public class CategoryFrag extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), ClothingCategoryActivity.class);
+                intent.putExtra("category", "의류");
+                startActivity(intent);
+            }
+        });
+
+        beautyImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), ClothingCategoryActivity.class);
+                intent.putExtra("category", "뷰티/미용");
                 startActivity(intent);
             }
         });
