@@ -41,7 +41,6 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         bindViews();
         setValuse();
         setupEvent();
@@ -124,7 +123,6 @@ public class MainActivity extends BaseActivity {
         this.serachImg = (ImageView) findViewById(R.id.serachImg);
         this.serachEdt = (EditText) findViewById(R.id.serachEdt);
         this.noticeImg = (ImageView) findViewById(R.id.noticeImg);
-        this.hambugermenuimg = (ImageView) findViewById(R.id.hambuger_menu_img);
     }
 
     class MyPagerAdapter extends FragmentStatePagerAdapter {

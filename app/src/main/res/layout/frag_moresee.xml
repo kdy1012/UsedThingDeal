@@ -5,117 +5,128 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_margin="20dp"
+            android:background="@drawable/moresee_box"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_round" />
 
             <TextView
-                android:padding="5dp"
-                android:background="#C8C8C8"
-                android:textColor="#FFFFFF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="계정"/>
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="사용자 아이디"
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
-            <RelativeLayout
-                android:background="#f5f3f3"
-                android:id="@+id/logoutLayout"
-                android:padding="10dp"
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="로그아웃"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
-
-                <ImageView
-                    android:layout_marginRight="10dp"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:background="#f5f3f3"
-                android:id="@+id/changePWLayout"
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_centerVertical="true"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="비밀번호 변경"/>
-
-                <ImageView
-                    android:layout_marginRight="10dp"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"/>
-
-            </RelativeLayout>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="사용자 신용도"
+                android:textColor="#000000" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/moresee_box"
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <TextView
-                android:padding="5dp"
-                android:background="#C8C8C8"
-                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E8E8EA" />
+
+
+            <TextView
+                android:id="@+id/likeItemTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="알림"/>
+                android:gravity="center"
+                android:text="찜 아이템"
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
-            <RelativeLayout
-                android:background="#f5f3f3"
-                android:padding="10dp"
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E8E8EA" />
 
-                <TextView
-                    android:layout_centerVertical="true"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="이벤트 알림 수신"/>
+            <TextView
+                android:id="@+id/shoppingBasketTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="장바구니"
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
-                <Switch
-                    android:id="@+id/sw"
-                    android:checked="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E8E8EA" />
 
-            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/moresee_box"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E8E8EA" />
+
+            <TextView
+                android:id="@+id/setTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="설정"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#E8E8EA" />
 
         </LinearLayout>
 

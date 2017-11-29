@@ -29,6 +29,7 @@
                     android:padding="10dp">
 
                     <ImageView
+                        android:id="@+id/clothingImg"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
@@ -52,6 +53,7 @@
                     android:padding="10dp">
 
                     <ImageView
+                        android:id="@+id/beautyImg"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
@@ -82,6 +84,7 @@
                     android:padding="10dp">
 
                     <ImageView
+                        android:id="@+id/accessoryImg"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
@@ -105,6 +108,7 @@
                     android:padding="10dp">
 
                     <ImageView
+                        android:id="@+id/sportImg"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
@@ -135,6 +139,7 @@
                     android:padding="10dp">
 
                     <ImageView
+                        android:id="@+id/digitalImg"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
@@ -158,6 +163,7 @@
                     android:padding="10dp">
 
                     <ImageView
+                        android:id="@+id/etcImg"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
