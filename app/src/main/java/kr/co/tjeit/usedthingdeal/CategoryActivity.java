@@ -21,12 +21,10 @@ public class CategoryActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clothing_category);
-        String title = getIntent().getStringExtra("category");
-        titleTxt.setText(title);
-
         bindViews();
         setValuse();
         setupEvent();
+
 
     }
 
@@ -35,6 +33,10 @@ public class CategoryActivity extends BaseActivity {
 
         mAdapter = new HomeFragAdapter(mContext, GridListData);
         GridView.setAdapter(mAdapter);
+
+
+        String title = getIntent().getStringExtra("category");
+        titleTxt.setText(title);
 
     }
 

@@ -11,5 +11,6 @@ public class Product implements Serializable {
     private String title; // 글 제목
     private String descriptior; // 글 내용
     private String price; // 가격
+    private String category; // 제품의 종류
 
 }
