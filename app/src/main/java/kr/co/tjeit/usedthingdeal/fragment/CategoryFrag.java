@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import kr.co.tjeit.usedthingdeal.ClothingCategoryActivity;
+import kr.co.tjeit.usedthingdeal.CategoryActivity;
 import kr.co.tjeit.usedthingdeal.R;
 
 /**
@@ -35,7 +35,6 @@ public class CategoryFrag extends Fragment {
         this.accessoryImg = (ImageView) v.findViewById(R.id.accessoryImg);
         this.beautyImg = (ImageView) v.findViewById(R.id.beautyImg);
         this.clothingImg = (ImageView) v.findViewById(R.id.clothingImg);
-
         return v;
     }
 
@@ -46,7 +45,7 @@ public class CategoryFrag extends Fragment {
         clothingImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), ClothingCategoryActivity.class);
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
                 intent.putExtra("category", "의류");
                 startActivity(intent);
             }
@@ -55,11 +54,49 @@ public class CategoryFrag extends Fragment {
         beautyImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), ClothingCategoryActivity.class);
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
                 intent.putExtra("category", "뷰티/미용");
                 startActivity(intent);
             }
         });
+
+        accessoryImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("category", "악세서리");
+                startActivity(intent);
+            }
+        });
+
+        sportImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("category", "스포츠/레저");
+                startActivity(intent);
+            }
+        });
+
+        digitalImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("category", "디지털/가전");
+                startActivity(intent);
+            }
+        });
+
+        etcImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("category", "기타");
+               startActivity(intent);
+            }
+        });
+
+
 
     }
 }

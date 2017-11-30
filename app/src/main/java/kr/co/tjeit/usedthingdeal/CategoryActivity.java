@@ -3,7 +3,16 @@ package kr.co.tjeit.usedthingdeal;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class ClothingCategoryActivity extends BaseActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+import kr.co.tjeit.usedthingdeal.adapter.HomeFragAdapter;
+import kr.co.tjeit.usedthingdeal.data.Product;
+
+public class CategoryActivity extends BaseActivity {
+
+    List<Product> GridListData = new ArrayList<>();
+    HomeFragAdapter mAdapter;
 
     private android.widget.GridView GridView;
     private android.widget.TextView titleTxt;
@@ -12,10 +21,7 @@ public class ClothingCategoryActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clothing_category);
-        this.titleTxt = (TextView) findViewById(R.id.titleTxt);
-        this.GridView = (android.widget.GridView) findViewById(R.id.GridView);
         String title = getIntent().getStringExtra("category");
-
         titleTxt.setText(title);
 
         bindViews();
@@ -27,6 +33,9 @@ public class ClothingCategoryActivity extends BaseActivity {
     @Override
     public void setValuse() {
 
+        mAdapter = new HomeFragAdapter(mContext, GridListData);
+        GridView.setAdapter(mAdapter);
+
     }
 
     @Override
@@ -36,6 +45,7 @@ public class ClothingCategoryActivity extends BaseActivity {
 
     @Override
     public void bindViews() {
-
+        this.titleTxt = (TextView) findViewById(R.id.titleTxt);
+        this.GridView = (android.widget.GridView) findViewById(R.id.GridView);
     }
 }
