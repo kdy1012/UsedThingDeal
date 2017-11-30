@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kr.co.tjeit.usedthingdeal.ProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/imgViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/viewImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_launcher" />
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/titleTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시판 title"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="물품 가격 : 10,000원"/>
+
+
+                <TextView
+                    android:id="@+id/contentsTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="판매자 정보"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/userTxt"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="유저 아이디 : user"/>
+
+                <TextView
+                    android:id="@+id/phoneTxt"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="연락처 : 010-1234-5678"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="댓글"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

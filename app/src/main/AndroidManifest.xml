@@ -19,7 +19,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SetActivity" />
-        <activity android:name=".CategoryActivity"></activity>
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".ProductActivity"></activity>
     </application>
 
 </manifest>
