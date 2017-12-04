@@ -1,15 +1,19 @@
 package kr.co.tjeit.usedthingdeal.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import java.util.List;
 
+import kr.co.tjeit.usedthingdeal.NoticeBoardActivity;
 import kr.co.tjeit.usedthingdeal.R;
 import kr.co.tjeit.usedthingdeal.data.NoticeBoard;
 import kr.co.tjeit.usedthingdeal.data.Product;
@@ -39,6 +43,16 @@ public class CommunityListAdapter extends ArrayAdapter<NoticeBoard> {
         if (row == null) {
             row =  inf.inflate(R.layout.community_list_item, null);
         }
+
+        RelativeLayout noticeLayout = (RelativeLayout) row.findViewById(R.id.noticeLayout);
+
+        noticeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, NoticeBoardActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
 
         return row;
     }
