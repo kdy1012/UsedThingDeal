@@ -16,18 +16,19 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <android.support.v4.view.ViewPager
-                android:id="@+id/imgViewPager"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
+                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/viewImg"
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/imgViewPager"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@mipmap/ic_launcher" />
+                    android:layout_height="200dp">
 
-            </android.support.v4.view.ViewPager>
+                </android.support.v4.view.ViewPager>
+
+            </FrameLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,6 +37,8 @@
                 android:padding="10dp">
 
                 <TextView
+                    android:padding="5dp"
+                    android:background="@drawable/moresee_box"
                     android:id="@+id/titleTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -44,54 +47,92 @@
                     android:textSize="20sp" />
 
                 <TextView
+                    android:padding="5dp"
+                    android:background="@drawable/moresee_box"
                     android:textColor="#000000"
                     android:gravity="right"
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="물품 가격 : 10,000원"/>
 
 
                 <TextView
+                    android:padding="5dp"
+                    android:background="@drawable/moresee_box"
                     android:id="@+id/contentsTxt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:text="게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳.게시판 관련 내용글이 들어 올 곳." />
 
-                <TextView
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/moresee_box"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="판매자 정보"
-                    android:textColor="#000000" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/userTxt"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="유저 아이디 : user"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="판매자 정보"
+                        android:textColor="#000000" />
 
-                <TextView
-                    android:id="@+id/phoneTxt"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="연락처 : 010-1234-5678"/>
+                    <TextView
+                        android:id="@+id/userTxt"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="유저 아이디 : user"/>
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/phoneTxt"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="연락처 : 010-1234-5678"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <TextView
+                android:layout_marginLeft="10dp"
                 android:padding="10dp"
                 android:textColor="#000000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="댓글"/>
 
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/moresee_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="등록"/>
+
         </LinearLayout>
 
     </ScrollView>
-
 
 </LinearLayout>
