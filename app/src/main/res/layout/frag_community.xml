@@ -13,36 +13,37 @@
         android:orientation="vertical">
 
         <RelativeLayout
-            android:padding="5dp"
-            android:background="#C8C8C8"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#C8C8C8"
+            android:padding="5dp">
 
             <TextView
-                android:layout_centerVertical="true"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
                 android:text="자유 게시판"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_marginRight="5dp"
-                android:layout_centerVertical="true"
-                android:textSize="12sp"
-                android:layout_alignParentRight="true"
+                android:id="@+id/moreSeeTxt1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
                 android:text="더 보기"
-                android:textColor="#FFFFFF"/>
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
 
         </RelativeLayout>
 
         <ListView
-            android:background="#FFFFFF"
             android:id="@+id/freeListView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
 
         </ListView>
 
@@ -58,36 +59,37 @@
         android:orientation="vertical">
 
         <RelativeLayout
-            android:padding="5dp"
-            android:background="#C8C8C8"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#C8C8C8"
+            android:padding="5dp">
 
             <TextView
-                android:layout_centerVertical="true"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
                 android:text="신고 게시판"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_marginRight="5dp"
-                android:layout_centerVertical="true"
-                android:textSize="12sp"
-                android:layout_alignParentRight="true"
+                android:id="@+id/moreSeeTxt2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
                 android:text="더 보기"
-                android:textColor="#FFFFFF"/>
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
 
         </RelativeLayout>
 
         <ListView
-            android:background="#FFFFFF"
             android:id="@+id/declarationListView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
 
         </ListView>
 
